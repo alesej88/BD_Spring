@@ -8,7 +8,9 @@ public class Main {
 var context = new AnnotationConfigApplicationContext(AppConfig.class);
 
 context.getBean(Product.class);
+
+context.close();
         }
 
     }
-}
+
